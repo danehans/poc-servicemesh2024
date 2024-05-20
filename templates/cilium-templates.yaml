@@ -56,7 +56,7 @@ spec:
     - name: https
       protocol: HTTPS
       port: 443
-      hostname: "bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.wyer.live"
+      hostname: "bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.daneyon.com"
       tls:
         certificateRefs:
           - kind: Secret
@@ -71,7 +71,7 @@ spec:
   parentRefs:
     - name: bookinfo-basic-gateway
   hostnames:
-    - "bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.wyer.live"
+    - "bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.daneyon.com"
   rules:
     - matches:
         - path:
@@ -88,7 +88,7 @@ metadata:
   namespace: bookinfo-basic
 spec:
   dnsNames:
-    - 'bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.wyer.live'
+    - 'bookinfo-basic.cilium-service-mesh-poc.service-mesh.sys.daneyon.com'
   issuerRef:
     group: cert-manager.io
     kind: ClusterIssuer

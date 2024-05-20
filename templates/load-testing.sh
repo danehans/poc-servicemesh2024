@@ -9,7 +9,7 @@ set -euo pipefail
 #
 CLUSTER_NAME=linkerd-service-mesh-poc
 STARTING_POINT=vm-meshed
-FQDN=$CLUSTER_NAME.service-mesh.sys.wyer.live
+FQDN=$CLUSTER_NAME.service-mesh.sys.daneyon.com
 BOOKINFO_URL="bookinfo-basic.${FQDN}/productpage?u=normal"
 PREFIX=https://
 # Bookinfo

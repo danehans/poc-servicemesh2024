@@ -24,15 +24,17 @@ spec:
       variables:
         targetEnv: lwde-production
         baseURL:
-          sys: "cilium-service-mesh-poc.service-mesh.sys.wyer.live"
-          mgmt: "mgmt.wyer.live"
+          sys: "cilium-service-mesh-poc.service-mesh.sys.daneyon.com"
+          mgmt: "mgmt.daneyon.com"
     machinePool:
       replicas: 4
       instanceType: c5.large
       availabilityZones:
-        - "us-east-1a"
+        - "us-west-2a"
+        - "us-west-2b"
+        - "us-west-2c"
     cluster:
-      region: us-east-1
+      region: us-west-2
       network:
         vpc:
           availabilityZoneUsageLimit: 2
@@ -144,7 +146,7 @@ spec:
                 - service
                 - ingress
                 - gateway-httproute
-              domainFilters: ["service-mesh.sys.wyer.live"]
+              domainFilters: ["service-mesh.sys.daneyon.com"]
               tolerations:
                 - key: "type"
                   operator: "Equal"

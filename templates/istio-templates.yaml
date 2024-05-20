@@ -27,7 +27,7 @@ metadata:
   namespace: istio-ingress
 spec:
   dnsNames:
-    - '*.istio-service-mesh-poc.service-mesh.sys.wyer.live'
+    - '*.istio-service-mesh-poc.service-mesh.sys.daneyon.com'
   issuerRef:
     group: cert-manager.io
     kind: ClusterIssuer
@@ -52,7 +52,7 @@ spec:
         name: https
         protocol: HTTPS
       hosts:
-        - "bookinfo-basic.istio-service-mesh-poc.service-mesh.sys.wyer.live"
+        - "bookinfo-basic.istio-service-mesh-poc.service-mesh.sys.daneyon.com"
       tls:
         mode: SIMPLE
         credentialName: wildcard-tls
@@ -64,7 +64,7 @@ metadata:
   namespace: bookinfo-basic
 spec:
   hosts:
-    - "bookinfo-basic.istio-service-mesh-poc.service-mesh.sys.wyer.live"
+    - "bookinfo-basic.istio-service-mesh-poc.service-mesh.sys.daneyon.com"
   gateways:
     - bookinfo-basic-gateway
   http:

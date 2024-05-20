@@ -67,8 +67,8 @@ spec:
       variables:
         targetEnv: lwde-production
         baseURL:
-          sys: "<cluster-name>.sys.wyer.live"
-          mgmt: "mgmt.wyer.live"
+          sys: "<cluster-name>.sys.daneyon.com"
+          mgmt: "mgmt.daneyon.com"
     apps:
       enabled: false
     machinePool:
