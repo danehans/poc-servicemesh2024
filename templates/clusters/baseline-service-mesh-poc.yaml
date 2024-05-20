@@ -17,8 +17,6 @@ spec:
   releaseName: baseline-service-mesh-poc
   install:
     createNamespace: true
-  dependsOn:
-    - name: capi-providers
   values:
     global:
       variables:

@@ -60,8 +60,6 @@ spec:
   releaseName: <cluster-name>
   install:
     createNamespace: true
-  dependsOn:
-    - name: capi-providers
   values:
     global:
       variables:
